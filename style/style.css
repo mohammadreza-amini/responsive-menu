@@ -89,6 +89,7 @@ header .logo a{
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     display: none;
+    outline: none;
 }
 
 .navbar-toggler span{
@@ -145,6 +146,18 @@ header .logo a{
         width: 100%;
         background-color: #2f3240;
         padding: 0;
+        height: 0;
+        visibility: hidden;
+        overflow: hidden;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+}
+
+    header .nav.open{
+        visibility: visible;
     }
 
     header ul{
